@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Color_Picker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Color_PickerTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Color_PickerUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5D5A8C1165004843597F0D6D7B0962F2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74DA8C8BF05DBF3F87C53333372D3603</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7AD11014CF98979EF65593C20B959EC4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD5A9EDCBBD461A3545C2749A6B82810</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

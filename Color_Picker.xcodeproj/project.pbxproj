@@ -15,6 +15,9 @@
 		04088C551D9F9D7A00B81DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04088C531D9F9D7A00B81DFF /* LaunchScreen.storyboard */; };
 		04088C601D9F9D7A00B81DFF /* Color_PickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04088C5F1D9F9D7A00B81DFF /* Color_PickerTests.swift */; };
 		04088C6B1D9F9D7A00B81DFF /* Color_PickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04088C6A1D9F9D7A00B81DFF /* Color_PickerUITests.swift */; };
+		B8529071A5FD92B120574966 /* Pods_Color_PickerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB4AD26FEE9257CB7985239F /* Pods_Color_PickerTests.framework */; };
+		C70A5E241290401135448B9B /* Pods_Color_PickerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D28B0EDBE46CBDE7F29192F2 /* Pods_Color_PickerUITests.framework */; };
+		CD6730CE27EC4671E89ACD98 /* Pods_Color_Picker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DBDEDCD18B1BD023CD6055 /* Pods_Color_Picker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		04088C661D9F9D7A00B81DFF /* Color_PickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Color_PickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04088C6A1D9F9D7A00B81DFF /* Color_PickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color_PickerUITests.swift; sourceTree = "<group>"; };
 		04088C6C1D9F9D7A00B81DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0692862B13CF5E889081A689 /* Pods-Color_Picker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Color_Picker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Color_Picker/Pods-Color_Picker.release.xcconfig"; sourceTree = "<group>"; };
+		57FBBE07F8E0D7D7CFD46258 /* Pods-Color_PickerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Color_PickerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Color_PickerUITests/Pods-Color_PickerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		68DBDEDCD18B1BD023CD6055 /* Pods_Color_Picker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Color_Picker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		721CDDBEBA42FC1B002C95F9 /* Pods-Color_Picker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Color_Picker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Color_Picker/Pods-Color_Picker.debug.xcconfig"; sourceTree = "<group>"; };
+		7230A5AAEF1E51A4103B3D3C /* Pods-Color_PickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Color_PickerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Color_PickerTests/Pods-Color_PickerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		79447D9A58E51CE6FE9DE986 /* Pods-Color_PickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Color_PickerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Color_PickerTests/Pods-Color_PickerTests.release.xcconfig"; sourceTree = "<group>"; };
+		D28B0EDBE46CBDE7F29192F2 /* Pods_Color_PickerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Color_PickerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF10CCC9FCB18C06B76CF73B /* Pods-Color_PickerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Color_PickerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Color_PickerUITests/Pods-Color_PickerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FB4AD26FEE9257CB7985239F /* Pods_Color_PickerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Color_PickerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD6730CE27EC4671E89ACD98 /* Pods_Color_Picker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8529071A5FD92B120574966 /* Pods_Color_PickerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70A5E241290401135448B9B /* Pods_Color_PickerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				04088C5E1D9F9D7A00B81DFF /* Color_PickerTests */,
 				04088C691D9F9D7A00B81DFF /* Color_PickerUITests */,
 				04088C451D9F9D7A00B81DFF /* Products */,
+				9F4433114D88BEC704B3EF9E /* Pods */,
+				41816F605A27A8BF478AC5C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = Color_PickerUITests;
 			sourceTree = "<group>";
 		};
+		41816F605A27A8BF478AC5C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68DBDEDCD18B1BD023CD6055 /* Pods_Color_Picker.framework */,
+				FB4AD26FEE9257CB7985239F /* Pods_Color_PickerTests.framework */,
+				D28B0EDBE46CBDE7F29192F2 /* Pods_Color_PickerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F4433114D88BEC704B3EF9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				721CDDBEBA42FC1B002C95F9 /* Pods-Color_Picker.debug.xcconfig */,
+				0692862B13CF5E889081A689 /* Pods-Color_Picker.release.xcconfig */,
+				7230A5AAEF1E51A4103B3D3C /* Pods-Color_PickerTests.debug.xcconfig */,
+				79447D9A58E51CE6FE9DE986 /* Pods-Color_PickerTests.release.xcconfig */,
+				57FBBE07F8E0D7D7CFD46258 /* Pods-Color_PickerUITests.debug.xcconfig */,
+				DF10CCC9FCB18C06B76CF73B /* Pods-Color_PickerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04088C6F1D9F9D7A00B81DFF /* Build configuration list for PBXNativeTarget "Color_Picker" */;
 			buildPhases = (
+				BA0F18815FCBEB5B314DA09A /* [CP] Check Pods Manifest.lock */,
 				04088C401D9F9D7A00B81DFF /* Sources */,
 				04088C411D9F9D7A00B81DFF /* Frameworks */,
 				04088C421D9F9D7A00B81DFF /* Resources */,
+				8D8C72B4039B3BD92E0B6888 /* [CP] Embed Pods Frameworks */,
+				853A0E76367134C31A8CAFB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04088C721D9F9D7A00B81DFF /* Build configuration list for PBXNativeTarget "Color_PickerTests" */;
 			buildPhases = (
+				BCD7230F29B8B7970C864674 /* [CP] Check Pods Manifest.lock */,
 				04088C571D9F9D7A00B81DFF /* Sources */,
 				04088C581D9F9D7A00B81DFF /* Frameworks */,
 				04088C591D9F9D7A00B81DFF /* Resources */,
+				63A1F93E06C1860D0B1679EB /* [CP] Embed Pods Frameworks */,
+				286F2F8EB0F5DFFA608B7AC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04088C751D9F9D7A00B81DFF /* Build configuration list for PBXNativeTarget "Color_PickerUITests" */;
 			buildPhases = (
+				1BB6DA30E633CEE762981E21 /* [CP] Check Pods Manifest.lock */,
 				04088C621D9F9D7A00B81DFF /* Sources */,
 				04088C631D9F9D7A00B81DFF /* Frameworks */,
 				04088C641D9F9D7A00B81DFF /* Resources */,
+				11A4FC14356E902D6287B1C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +301,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11A4FC14356E902D6287B1C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Color_PickerUITests/Pods-Color_PickerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BB6DA30E633CEE762981E21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		286F2F8EB0F5DFFA608B7AC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Color_PickerTests/Pods-Color_PickerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63A1F93E06C1860D0B1679EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Color_PickerTests/Pods-Color_PickerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		853A0E76367134C31A8CAFB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Color_Picker/Pods-Color_Picker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D8C72B4039B3BD92E0B6888 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Color_Picker/Pods-Color_Picker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA0F18815FCBEB5B314DA09A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCD7230F29B8B7970C864674 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04088C401D9F9D7A00B81DFF /* Sources */ = {
@@ -401,6 +572,7 @@
 		};
 		04088C701D9F9D7A00B81DFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 721CDDBEBA42FC1B002C95F9 /* Pods-Color_Picker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Color_Picker/Info.plist;
@@ -412,6 +584,7 @@
 		};
 		04088C711D9F9D7A00B81DFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0692862B13CF5E889081A689 /* Pods-Color_Picker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Color_Picker/Info.plist;
@@ -423,6 +596,7 @@
 		};
 		04088C731D9F9D7A00B81DFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7230A5AAEF1E51A4103B3D3C /* Pods-Color_PickerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Color_PickerTests/Info.plist;
@@ -435,6 +609,7 @@
 		};
 		04088C741D9F9D7A00B81DFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79447D9A58E51CE6FE9DE986 /* Pods-Color_PickerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Color_PickerTests/Info.plist;
@@ -447,6 +622,7 @@
 		};
 		04088C761D9F9D7A00B81DFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57FBBE07F8E0D7D7CFD46258 /* Pods-Color_PickerUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Color_PickerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -458,6 +634,7 @@
 		};
 		04088C771D9F9D7A00B81DFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF10CCC9FCB18C06B76CF73B /* Pods-Color_PickerUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = Color_PickerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -486,6 +663,7 @@
 				04088C711D9F9D7A00B81DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04088C721D9F9D7A00B81DFF /* Build configuration list for PBXNativeTarget "Color_PickerTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +672,7 @@
 				04088C741D9F9D7A00B81DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04088C751D9F9D7A00B81DFF /* Build configuration list for PBXNativeTarget "Color_PickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +681,7 @@
 				04088C771D9F9D7A00B81DFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

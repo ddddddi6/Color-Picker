@@ -7,74 +7,125 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		121B4044CDF74052EB4CF4FA0E26C163 /* Pods-Color_Picker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A40284574D04EA1C65C962DC5B2820 /* Pods-Color_Picker-dummy.m */; };
+		00F82837172BA53B3B96DBC681FE4207 /* MQTTConnectPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A3A890C091F1340B773145B72EA49B /* MQTTConnectPacket.swift */; };
+		102E36374C2C3C1366FBF1DD10AE9C94 /* MQTTSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BC86B49039B1C9A29D93D33808BDE3 /* MQTTSession.swift */; };
+		1F8F2A66F8A1E40C998FBDB50A1332CE /* MQTTExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470A79B65E958A0A646AA0199C70E3B2 /* MQTTExtensions.swift */; };
 		24E78990CCC980A1E25CF1014AFAC736 /* Pods-Color_PickerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B27049AC8AC27BD39E2E396C5E4CB416 /* Pods-Color_PickerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2875F1A27E8F6C53C5AD0A2FF659DCF2 /* Pods-Color_PickerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D76A1B08637D225555BB01DF4099B78 /* Pods-Color_PickerUITests-dummy.m */; };
-		3B63A528ED25F08C9A0081E598E5A468 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AADBFFC8403B874B55DD0B82B7496F5 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2732B8BCC4988ABD3F003F2DFA8F1DD7 /* SwiftyJSON-dummy.m */; };
+		2E38920369DD338BB48A1CC5352DE993 /* MQTTPacketFixedHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C81DDD292C5D7E90418C1D514F6C2C /* MQTTPacketFixedHeader.swift */; };
+		4667755AAC6411BCD70DC1040871B75F /* MQTTUnsubPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48D3EB5144A582AB9422034897E5965 /* MQTTUnsubPacket.swift */; };
+		4681BB70707304C291D032108BE60B85 /* MQTTDisconnectPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B566529A159A87F8EE9F9F07EF1F8A /* MQTTDisconnectPacket.swift */; };
+		4BD09D6B628EF0C0084F665A773E3896 /* MQTTPubAck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463D4C69FB77EC64CBE9FD6BB9485B7 /* MQTTPubAck.swift */; };
+		61AD45F726EB9A7AF845A0878D5845CF /* MQTTSessionStreamDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476BC431A20DA5AA9511ED736C35EC6 /* MQTTSessionStreamDelegate.swift */; };
+		65527AC096600D7B2F96ABFB347CB331 /* MQTTPublishPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71233DD9F5E34F396035169CAB51A1CC /* MQTTPublishPacket.swift */; };
+		79A08E669A9644DEDCC32070FD3D1976 /* MQTTPubMsg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83399DFE3F8A6DA9F737949B78FA4FAE /* MQTTPubMsg.swift */; };
 		7B0231DD58787676D6448123E73C8DDA /* Pods-Color_PickerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB7CC599E6EADDBD7547210778115FF6 /* Pods-Color_PickerTests-dummy.m */; };
+		86C6F2F58BBD79E23A4BACE7C53D9605 /* Pods-Color_Picker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A40284574D04EA1C65C962DC5B2820 /* Pods-Color_Picker-dummy.m */; };
+		898DA2E67F2BAD6269C4C7632C322C29 /* SwiftMQTT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDCAD8A4B52C1A158F1CEA7B2FE9D335 /* SwiftMQTT-dummy.m */; };
 		9B5E3E545C4C6E48EED5BC2B3A198906 /* Pods-Color_PickerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C600512C60049E68A1B8E68A2BAA11FF /* Pods-Color_PickerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9B4DA462F3CC12665EBE2525FFC8B5D /* Pods-Color_Picker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A19C35B2167468AD2C75E24512D76C /* Pods-Color_Picker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3E30CBE4CA628F5FB13BB307BF1E120 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
-		CBD675EC589DCB501395B91AF06F1E8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		CD714BA43A4402BA8B7632FB6F7A5DF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		D39425D4BB9A00AA7D4E862BF74DEF8C /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */; };
+		A07D1507022BB5542EAD4D139C244ADB /* MQTTPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA1E2D8163CCE751F31ADCE8FC0EE46 /* MQTTPacket.swift */; };
+		A0832EBE41CD8E32A97B78C58EAB2E55 /* Pods-Color_Picker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33A19C35B2167468AD2C75E24512D76C /* Pods-Color_Picker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A16562F3D81547C2BA57E32B0F5AC6E6 /* MQTTPingPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E1CB2836BC1B203BBE4F128BE3E14 /* MQTTPingPacket.swift */; };
+		A276D4A09F87BB264DE35CDE4DC10DAB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9904383AEE30E6EA1B27A5C0147960 /* SwiftyJSON.swift */; };
+		A8892C4ED0992F00F6E9660FA94DD8C3 /* MQTTConnAckPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E66D26E79E2768E15F539367B95C6B /* MQTTConnAckPacket.swift */; };
+		B0A547D9FF3E924672394C66D5C6844C /* MQTTSubPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488CB97AF31C590B9BF6382CEA28F58E /* MQTTSubPacket.swift */; };
+		C45796F179FF97640E6FDA8C985DDD56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		C4BAFB929D49EDF8550F8390FA0BE97D /* MQTTSubAckPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFDCF5C46270434C9066B66BD3EF620 /* MQTTSubAckPacket.swift */; };
+		D3E3E6A1884A0DE4FEC6AB61A35D7B19 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56DE40297041799A31472DB5C7103D31 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D65A0525C5E2F73D4B2C78C7F6612103 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		DE27D8FA810749FDFFFB241D9F8B390D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		DF85FC3A520CD1831B97E3449EF603A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		EBDB4F3F3FC9FCBE512BCB8C609A15A4 /* MQTTPingResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3CCA1A8FFE64C0B710A6CE0FD0D6EB /* MQTTPingResp.swift */; };
 		F4DA26864AE0CAF1B429F93CD86E5CD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F67F339859BB262A7DF7C4BC81B245B5 /* SwiftMQTT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA7C852F7BD498DE869ADA82A8FB094 /* SwiftMQTT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB81A4BBC11B69C45C09977A4B8400BB /* MQTTUnSubAckPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99656A01375CC84D7BDFA4D5F7DC21C /* MQTTUnSubAckPacket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E9B7E10E6D1F834D1BB36DC157C28714 /* PBXContainerItemProxy */ = {
+		12B001306845AD6C3FAD8C3B4A89A718 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CD5A9EDCBBD461A3545C2749A6B82810;
+			remoteGlobalIDString = C3D8FC9024B1A6C4E14AF49C964C87C9;
 			remoteInfo = SwiftyJSON;
+		};
+		2EC1F6FCE89F3170B16FED935B74343F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C7272434E75597C3114CCDBB59E4F5D;
+			remoteInfo = SwiftMQTT;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		07FFE5F33D70FD7656E507E4085B0405 /* Pods-Color_PickerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Color_PickerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0901716E02736D2D628236E4E9FFD49B /* Pods-Color_Picker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Color_Picker-acknowledgements.plist"; sourceTree = "<group>"; };
 		18FC6BF6D690741B2C6004B55E27C84C /* Pods-Color_PickerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Color_PickerUITests-frameworks.sh"; sourceTree = "<group>"; };
 		19BD929DDC65A31F5AC8ABBEC85551E1 /* Pods-Color_PickerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Color_PickerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		232CBE4D509FFE2AB999FB63617089E0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2732B8BCC4988ABD3F003F2DFA8F1DD7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		27CB8C4DDB1D5157E1723A2651E7C0D1 /* Pods-Color_PickerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Color_PickerTests-resources.sh"; sourceTree = "<group>"; };
-		2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		2A1B9B6C0BAD64BBDF4C1B292DDE372D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C6F83ABDADD14F9D200DEDFD29B4A6A /* Pods_Color_Picker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Color_Picker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FA7C852F7BD498DE869ADA82A8FB094 /* SwiftMQTT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMQTT-umbrella.h"; sourceTree = "<group>"; };
 		33A19C35B2167468AD2C75E24512D76C /* Pods-Color_Picker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Color_Picker-umbrella.h"; sourceTree = "<group>"; };
 		38870CEFA2EFE502EA3E809FAEE9ECE6 /* Pods-Color_PickerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Color_PickerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		38B5C10A7099315768CC2AD75074B989 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A9904383AEE30E6EA1B27A5C0147960 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		3D100C57767287F8C399894EEBC85FB9 /* Pods_Color_PickerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Color_PickerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F60BFD9FD4921F3E75F892A18EE1E37 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		44B02B9605EB4C387D179630A96EAC43 /* Pods-Color_PickerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Color_PickerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		45E15A213DB586EE2E3D3BC03DFBCE9F /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		470A79B65E958A0A646AA0199C70E3B2 /* MQTTExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTExtensions.swift; path = SwiftMQTT/SwiftMQTT/MQTTExtensions.swift; sourceTree = "<group>"; };
+		488CB97AF31C590B9BF6382CEA28F58E /* MQTTSubPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSubPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTSubPacket.swift; sourceTree = "<group>"; };
+		49C81DDD292C5D7E90418C1D514F6C2C /* MQTTPacketFixedHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPacketFixedHeader.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPacketFixedHeader.swift; sourceTree = "<group>"; };
+		56DE40297041799A31472DB5C7103D31 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		582819FB717469372025D0B583164EEB /* Pods-Color_Picker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Color_Picker.debug.xcconfig"; sourceTree = "<group>"; };
 		5CE5338E2CF200D3490154F91ABA2BE1 /* Pods-Color_PickerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Color_PickerTests-frameworks.sh"; sourceTree = "<group>"; };
 		5DCD197CB099080310BBF347A4520C2D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		624631AC8ECD88204E31541F2DB63655 /* SwiftMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		659A800BAD9C9BA4328279B8E03A85AD /* SwiftMQTT-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMQTT-prefix.pch"; sourceTree = "<group>"; };
 		65A40284574D04EA1C65C962DC5B2820 /* Pods-Color_Picker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Color_Picker-dummy.m"; sourceTree = "<group>"; };
+		6B3CCA1A8FFE64C0B710A6CE0FD0D6EB /* MQTTPingResp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPingResp.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPingResp.swift; sourceTree = "<group>"; };
+		6F714A584CBC90B6F4E404A0258FB9D5 /* SwiftMQTT.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMQTT.xcconfig; sourceTree = "<group>"; };
+		71233DD9F5E34F396035169CAB51A1CC /* MQTTPublishPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPublishPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPublishPacket.swift; sourceTree = "<group>"; };
 		7226DEAC920C522B348A00345BF9D931 /* Pods-Color_PickerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Color_PickerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		730724EFE05BCF24BA8BE9F517E705E2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80BC86B49039B1C9A29D93D33808BDE3 /* MQTTSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSession.swift; path = SwiftMQTT/SwiftMQTT/MQTTSession.swift; sourceTree = "<group>"; };
+		83399DFE3F8A6DA9F737949B78FA4FAE /* MQTTPubMsg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPubMsg.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPubMsg.swift; sourceTree = "<group>"; };
+		8476BC431A20DA5AA9511ED736C35EC6 /* MQTTSessionStreamDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSessionStreamDelegate.swift; path = SwiftMQTT/SwiftMQTT/MQTTSessionStreamDelegate.swift; sourceTree = "<group>"; };
 		8D76A1B08637D225555BB01DF4099B78 /* Pods-Color_PickerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Color_PickerUITests-dummy.m"; sourceTree = "<group>"; };
+		8ED6BEE145D348C1F9687EA49C1C58DB /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		8F7E30240339069E9DBC09A6A987872D /* Pods-Color_Picker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Color_Picker-resources.sh"; sourceTree = "<group>"; };
 		90AD38F7B15F1DA86A64F4EA2CEDD825 /* Pods-Color_PickerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Color_PickerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		982ECA26DD67ED14664FB3B91A1B07A3 /* SwiftMQTT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftMQTT.modulemap; sourceTree = "<group>"; };
+		A38E1CB2836BC1B203BBE4F128BE3E14 /* MQTTPingPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPingPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPingPacket.swift; sourceTree = "<group>"; };
+		A7E66D26E79E2768E15F539367B95C6B /* MQTTConnAckPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTConnAckPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTConnAckPacket.swift; sourceTree = "<group>"; };
+		ADA1E2D8163CCE751F31ADCE8FC0EE46 /* MQTTPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPacket.swift; sourceTree = "<group>"; };
+		AEFDCF5C46270434C9066B66BD3EF620 /* MQTTSubAckPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTSubAckPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTSubAckPacket.swift; sourceTree = "<group>"; };
 		B27049AC8AC27BD39E2E396C5E4CB416 /* Pods-Color_PickerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Color_PickerTests-umbrella.h"; sourceTree = "<group>"; };
+		B2B566529A159A87F8EE9F9F07EF1F8A /* MQTTDisconnectPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTDisconnectPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTDisconnectPacket.swift; sourceTree = "<group>"; };
 		B55CCD81F221A80D8E213073354AE156 /* Pods-Color_Picker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Color_Picker.release.xcconfig"; sourceTree = "<group>"; };
 		B72F3D885DF6FCE9737249ACB2972B2E /* Pods-Color_PickerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Color_PickerUITests-resources.sh"; sourceTree = "<group>"; };
-		BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		BDCAD8A4B52C1A158F1CEA7B2FE9D335 /* SwiftMQTT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMQTT-dummy.m"; sourceTree = "<group>"; };
 		BE22CE5DDD1DFFABB9BA7968E10A7233 /* Pods-Color_PickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Color_PickerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BE6C06A9ECE1C50B7A4C070469212786 /* Pods_Color_Picker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Color_Picker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1A3A890C091F1340B773145B72EA49B /* MQTTConnectPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTConnectPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTConnectPacket.swift; sourceTree = "<group>"; };
 		C600512C60049E68A1B8E68A2BAA11FF /* Pods-Color_PickerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Color_PickerUITests-umbrella.h"; sourceTree = "<group>"; };
-		C7D6E868A3ADF1E71CA7AFC42EFF03F8 /* Pods_Color_PickerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Color_PickerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7CC599E6EADDBD7547210778115FF6 /* Pods-Color_PickerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Color_PickerTests-dummy.m"; sourceTree = "<group>"; };
 		CE4775F681DE68DBB67DFFE034C252FF /* Pods-Color_Picker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Color_Picker.modulemap"; sourceTree = "<group>"; };
 		CE610C8959EADDA1C702B252F97FB54E /* Pods-Color_PickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Color_PickerTests.release.xcconfig"; sourceTree = "<group>"; };
 		CE96A15744B1FE002A2693307537973F /* Pods-Color_PickerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Color_PickerUITests.modulemap"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		D0A47A49C7A25824C41FC1B2014F78AC /* Pods-Color_Picker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Color_Picker-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D0D891A5D42E988A6C92526900A28E84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3C761CE7239EE5176393CCA07F32253 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D967E036EF65F1A73DA1C363A8C60406 /* Pods-Color_Picker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Color_Picker-frameworks.sh"; sourceTree = "<group>"; };
-		FB3854A77532DC6C0A2AFD2C7D78560F /* Pods_Color_PickerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Color_PickerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F463D4C69FB77EC64CBE9FD6BB9485B7 /* MQTTPubAck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTPubAck.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTPubAck.swift; sourceTree = "<group>"; };
+		F48D3EB5144A582AB9422034897E5965 /* MQTTUnsubPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTUnsubPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTUnsubPacket.swift; sourceTree = "<group>"; };
+		F84A7E085A2E99F383F9D86EBA5384A5 /* Pods_Color_PickerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Color_PickerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99656A01375CC84D7BDFA4D5F7DC21C /* MQTTUnSubAckPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MQTTUnSubAckPacket.swift; path = SwiftMQTT/SwiftMQTT/Models/MQTTUnSubAckPacket.swift; sourceTree = "<group>"; };
 		FD53D0FA2AE92DCA3FBD3E47B69F3EC4 /* Pods-Color_PickerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Color_PickerTests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,36 +146,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBA86FDD6E62BED28D9A8DD0414070A4 /* Frameworks */ = {
+		31B9931A83F4EDCE5EAB08CA48D30A2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD714BA43A4402BA8B7632FB6F7A5DF5 /* Foundation.framework in Frameworks */,
+				DE27D8FA810749FDFFFB241D9F8B390D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D30012BDED30C67CB77D80674E4D2DEC /* Frameworks */ = {
+		55F23B001D2CAA03192923495FF74A4A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD675EC589DCB501395B91AF06F1E8F /* Foundation.framework in Frameworks */,
+				D65A0525C5E2F73D4B2C78C7F6612103 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B3554A60A89D9DC44079BC32BDC7D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45796F179FF97640E6FDA8C985DDD56 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3920F006293E768FCE33C1AD7FE2CE4D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BE6C06A9ECE1C50B7A4C070469212786 /* Pods_Color_Picker.framework */,
-				C7D6E868A3ADF1E71CA7AFC42EFF03F8 /* Pods_Color_PickerTests.framework */,
-				FB3854A77532DC6C0A2AFD2C7D78560F /* Pods_Color_PickerUITests.framework */,
-				D3C761CE7239EE5176393CCA07F32253 /* SwiftyJSON.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,13 +217,41 @@
 			path = "Target Support Files/Pods-Color_Picker";
 			sourceTree = "<group>";
 		};
-		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
+		579CD734B011A7A945C55189F686C3C9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
-				8EC39E1DC11846207722B71AAFE40F98 /* Support Files */,
+				232CBE4D509FFE2AB999FB63617089E0 /* Info.plist */,
+				3F60BFD9FD4921F3E75F892A18EE1E37 /* SwiftyJSON.modulemap */,
+				45E15A213DB586EE2E3D3BC03DFBCE9F /* SwiftyJSON.xcconfig */,
+				2732B8BCC4988ABD3F003F2DFA8F1DD7 /* SwiftyJSON-dummy.m */,
+				8ED6BEE145D348C1F9687EA49C1C58DB /* SwiftyJSON-prefix.pch */,
+				56DE40297041799A31472DB5C7103D31 /* SwiftyJSON-umbrella.h */,
 			);
-			path = SwiftyJSON;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		6A0CD06952CA14654068BE1C8BE8CF82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D2F150D989B41C31730864833714A79 /* SwiftMQTT */,
+				D3018F4B48DAB268A7326AF4185B6617 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		739A7F6E494DD5BB58B869E11B29C591 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A1B9B6C0BAD64BBDF4C1B292DDE372D /* Info.plist */,
+				982ECA26DD67ED14664FB3B91A1B07A3 /* SwiftMQTT.modulemap */,
+				6F714A584CBC90B6F4E404A0258FB9D5 /* SwiftMQTT.xcconfig */,
+				BDCAD8A4B52C1A158F1CEA7B2FE9D335 /* SwiftMQTT-dummy.m */,
+				659A800BAD9C9BA4328279B8E03A85AD /* SwiftMQTT-prefix.pch */,
+				2FA7C852F7BD498DE869ADA82A8FB094 /* SwiftMQTT-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftMQTT";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -183,8 +259,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
-				3920F006293E768FCE33C1AD7FE2CE4D /* Products */,
+				6A0CD06952CA14654068BE1C8BE8CF82 /* Pods */,
+				D0C3AEE8898CC66BB4F0B0938EEEBCC2 /* Products */,
 				7F2EB8262F9EA7D0D8D8BF470C44DD3A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -199,18 +275,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		8EC39E1DC11846207722B71AAFE40F98 /* Support Files */ = {
+		8D2F150D989B41C31730864833714A79 /* SwiftMQTT */ = {
 			isa = PBXGroup;
 			children = (
-				C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */,
-				D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */,
-				2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */,
-				32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */,
-				BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */,
-				05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */,
+				A7E66D26E79E2768E15F539367B95C6B /* MQTTConnAckPacket.swift */,
+				C1A3A890C091F1340B773145B72EA49B /* MQTTConnectPacket.swift */,
+				B2B566529A159A87F8EE9F9F07EF1F8A /* MQTTDisconnectPacket.swift */,
+				470A79B65E958A0A646AA0199C70E3B2 /* MQTTExtensions.swift */,
+				ADA1E2D8163CCE751F31ADCE8FC0EE46 /* MQTTPacket.swift */,
+				49C81DDD292C5D7E90418C1D514F6C2C /* MQTTPacketFixedHeader.swift */,
+				A38E1CB2836BC1B203BBE4F128BE3E14 /* MQTTPingPacket.swift */,
+				6B3CCA1A8FFE64C0B710A6CE0FD0D6EB /* MQTTPingResp.swift */,
+				F463D4C69FB77EC64CBE9FD6BB9485B7 /* MQTTPubAck.swift */,
+				71233DD9F5E34F396035169CAB51A1CC /* MQTTPublishPacket.swift */,
+				83399DFE3F8A6DA9F737949B78FA4FAE /* MQTTPubMsg.swift */,
+				80BC86B49039B1C9A29D93D33808BDE3 /* MQTTSession.swift */,
+				8476BC431A20DA5AA9511ED736C35EC6 /* MQTTSessionStreamDelegate.swift */,
+				AEFDCF5C46270434C9066B66BD3EF620 /* MQTTSubAckPacket.swift */,
+				488CB97AF31C590B9BF6382CEA28F58E /* MQTTSubPacket.swift */,
+				F99656A01375CC84D7BDFA4D5F7DC21C /* MQTTUnSubAckPacket.swift */,
+				F48D3EB5144A582AB9422034897E5965 /* MQTTUnsubPacket.swift */,
+				739A7F6E494DD5BB58B869E11B29C591 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
+			path = SwiftMQTT;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -239,22 +326,43 @@
 			path = "Target Support Files/Pods-Color_PickerTests";
 			sourceTree = "<group>";
 		};
-		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
+		D0C3AEE8898CC66BB4F0B0938EEEBCC2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
+				2C6F83ABDADD14F9D200DEDFD29B4A6A /* Pods_Color_Picker.framework */,
+				F84A7E085A2E99F383F9D86EBA5384A5 /* Pods_Color_PickerTests.framework */,
+				3D100C57767287F8C399894EEBC85FB9 /* Pods_Color_PickerUITests.framework */,
+				624631AC8ECD88204E31541F2DB63655 /* SwiftMQTT.framework */,
+				730724EFE05BCF24BA8BE9F517E705E2 /* SwiftyJSON.framework */,
 			);
-			name = Pods;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3018F4B48DAB268A7326AF4185B6617 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				3A9904383AEE30E6EA1B27A5C0147960 /* SwiftyJSON.swift */,
+				579CD734B011A7A945C55189F686C3C9 /* Support Files */,
+			);
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		008A5F0662BA21446A7FCB5474DDBB97 /* Headers */ = {
+		4C4A59DEA925AE0A2A198E84E05753B5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B63A528ED25F08C9A0081E598E5A468 /* SwiftyJSON-umbrella.h in Headers */,
+				F67F339859BB262A7DF7C4BC81B245B5 /* SwiftMQTT-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CE84895AB3144E6DD72320AF230912F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0832EBE41CD8E32A97B78C58EAB2E55 /* Pods-Color_Picker-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,11 +374,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79515050B96B45DE8F42BCADBC728727 /* Headers */ = {
+		8AAA7DAF261045B6C2B836FE17DF16AD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9B4DA462F3CC12665EBE2525FFC8B5D /* Pods-Color_Picker-umbrella.h in Headers */,
+				D3E3E6A1884A0DE4FEC6AB61A35D7B19 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +393,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		34E1530D88C9583CC600067D94E17AD4 /* Pods-Color_Picker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A56DB18F3EDF620346DA69C4E259A69 /* Build configuration list for PBXNativeTarget "Pods-Color_Picker" */;
+			buildPhases = (
+				9FE05723AEF018F6C357374C76570D9B /* Sources */,
+				55F23B001D2CAA03192923495FF74A4A /* Frameworks */,
+				5CE84895AB3144E6DD72320AF230912F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0DA4C5B6FEAF2C8581F7C4B0F214A0E /* PBXTargetDependency */,
+				7B5D8B66701E0EC6D6E142A35ECC9F44 /* PBXTargetDependency */,
+			);
+			name = "Pods-Color_Picker";
+			productName = "Pods-Color_Picker";
+			productReference = 2C6F83ABDADD14F9D200DEDFD29B4A6A /* Pods_Color_Picker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5D5A8C1165004843597F0D6D7B0962F2 /* Pods-Color_PickerUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82FBA86680279A21DBF339C20F1F432B /* Build configuration list for PBXNativeTarget "Pods-Color_PickerUITests" */;
@@ -299,25 +426,7 @@
 			);
 			name = "Pods-Color_PickerUITests";
 			productName = "Pods-Color_PickerUITests";
-			productReference = FB3854A77532DC6C0A2AFD2C7D78560F /* Pods_Color_PickerUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		74DA8C8BF05DBF3F87C53333372D3603 /* Pods-Color_Picker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 35FD498B4C7199320BDDA6DCB657658D /* Build configuration list for PBXNativeTarget "Pods-Color_Picker" */;
-			buildPhases = (
-				22685AF2FCA93F4BF90657936239246D /* Sources */,
-				BBA86FDD6E62BED28D9A8DD0414070A4 /* Frameworks */,
-				79515050B96B45DE8F42BCADBC728727 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D52CB49F390573D95FCBD4A2AA08C93A /* PBXTargetDependency */,
-			);
-			name = "Pods-Color_Picker";
-			productName = "Pods-Color_Picker";
-			productReference = BE6C06A9ECE1C50B7A4C070469212786 /* Pods_Color_Picker.framework */;
+			productReference = 3D100C57767287F8C399894EEBC85FB9 /* Pods_Color_PickerUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7AD11014CF98979EF65593C20B959EC4 /* Pods-Color_PickerTests */ = {
@@ -334,16 +443,33 @@
 			);
 			name = "Pods-Color_PickerTests";
 			productName = "Pods-Color_PickerTests";
-			productReference = C7D6E868A3ADF1E71CA7AFC42EFF03F8 /* Pods_Color_PickerTests.framework */;
+			productReference = F84A7E085A2E99F383F9D86EBA5384A5 /* Pods_Color_PickerTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CD5A9EDCBBD461A3545C2749A6B82810 /* SwiftyJSON */ = {
+		9C7272434E75597C3114CCDBB59E4F5D /* SwiftMQTT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 413E8F975F294538017D983706E9E6A6 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 761362C9AEBC985590329BC8316633B2 /* Build configuration list for PBXNativeTarget "SwiftMQTT" */;
 			buildPhases = (
-				33158FE48EE9249FE16825D60AA28B9B /* Sources */,
-				D30012BDED30C67CB77D80674E4D2DEC /* Frameworks */,
-				008A5F0662BA21446A7FCB5474DDBB97 /* Headers */,
+				5322E299EBFC2B8711FEA12D32DADF55 /* Sources */,
+				E6B3554A60A89D9DC44079BC32BDC7D8 /* Frameworks */,
+				4C4A59DEA925AE0A2A198E84E05753B5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftMQTT;
+			productName = SwiftMQTT;
+			productReference = 624631AC8ECD88204E31541F2DB63655 /* SwiftMQTT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C3D8FC9024B1A6C4E14AF49C964C87C9 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3C20766AFA9C50B8B270AD96202330F /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				3A6EC5B039659F2686F5B6ABC6CE5F2E /* Sources */,
+				31B9931A83F4EDCE5EAB08CA48D30A2E /* Frameworks */,
+				8AAA7DAF261045B6C2B836FE17DF16AD /* Headers */,
 			);
 			buildRules = (
 			);
@@ -351,7 +477,7 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = D3C761CE7239EE5176393CCA07F32253 /* SwiftyJSON.framework */;
+			productReference = 730724EFE05BCF24BA8BE9F517E705E2 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -371,27 +497,20 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3920F006293E768FCE33C1AD7FE2CE4D /* Products */;
+			productRefGroup = D0C3AEE8898CC66BB4F0B0938EEEBCC2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				74DA8C8BF05DBF3F87C53333372D3603 /* Pods-Color_Picker */,
+				34E1530D88C9583CC600067D94E17AD4 /* Pods-Color_Picker */,
 				7AD11014CF98979EF65593C20B959EC4 /* Pods-Color_PickerTests */,
 				5D5A8C1165004843597F0D6D7B0962F2 /* Pods-Color_PickerUITests */,
-				CD5A9EDCBBD461A3545C2749A6B82810 /* SwiftyJSON */,
+				9C7272434E75597C3114CCDBB59E4F5D /* SwiftMQTT */,
+				C3D8FC9024B1A6C4E14AF49C964C87C9 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		22685AF2FCA93F4BF90657936239246D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				121B4044CDF74052EB4CF4FA0E26C163 /* Pods-Color_Picker-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2497DF63E2CA28A342E04D9183346DC2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -400,12 +519,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		33158FE48EE9249FE16825D60AA28B9B /* Sources */ = {
+		3A6EC5B039659F2686F5B6ABC6CE5F2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D39425D4BB9A00AA7D4E862BF74DEF8C /* SwiftyJSON-dummy.m in Sources */,
-				C3E30CBE4CA628F5FB13BB307BF1E120 /* SwiftyJSON.swift in Sources */,
+				2AADBFFC8403B874B55DD0B82B7496F5 /* SwiftyJSON-dummy.m in Sources */,
+				A276D4A09F87BB264DE35CDE4DC10DAB /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5322E299EBFC2B8711FEA12D32DADF55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8892C4ED0992F00F6E9660FA94DD8C3 /* MQTTConnAckPacket.swift in Sources */,
+				00F82837172BA53B3B96DBC681FE4207 /* MQTTConnectPacket.swift in Sources */,
+				4681BB70707304C291D032108BE60B85 /* MQTTDisconnectPacket.swift in Sources */,
+				1F8F2A66F8A1E40C998FBDB50A1332CE /* MQTTExtensions.swift in Sources */,
+				A07D1507022BB5542EAD4D139C244ADB /* MQTTPacket.swift in Sources */,
+				2E38920369DD338BB48A1CC5352DE993 /* MQTTPacketFixedHeader.swift in Sources */,
+				A16562F3D81547C2BA57E32B0F5AC6E6 /* MQTTPingPacket.swift in Sources */,
+				EBDB4F3F3FC9FCBE512BCB8C609A15A4 /* MQTTPingResp.swift in Sources */,
+				4BD09D6B628EF0C0084F665A773E3896 /* MQTTPubAck.swift in Sources */,
+				65527AC096600D7B2F96ABFB347CB331 /* MQTTPublishPacket.swift in Sources */,
+				79A08E669A9644DEDCC32070FD3D1976 /* MQTTPubMsg.swift in Sources */,
+				102E36374C2C3C1366FBF1DD10AE9C94 /* MQTTSession.swift in Sources */,
+				61AD45F726EB9A7AF845A0878D5845CF /* MQTTSessionStreamDelegate.swift in Sources */,
+				C4BAFB929D49EDF8550F8390FA0BE97D /* MQTTSubAckPacket.swift in Sources */,
+				B0A547D9FF3E924672394C66D5C6844C /* MQTTSubPacket.swift in Sources */,
+				FB81A4BBC11B69C45C09977A4B8400BB /* MQTTUnSubAckPacket.swift in Sources */,
+				4667755AAC6411BCD70DC1040871B75F /* MQTTUnsubPacket.swift in Sources */,
+				898DA2E67F2BAD6269C4C7632C322C29 /* SwiftMQTT-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,21 +561,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9FE05723AEF018F6C357374C76570D9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86C6F2F58BBD79E23A4BACE7C53D9605 /* Pods-Color_Picker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D52CB49F390573D95FCBD4A2AA08C93A /* PBXTargetDependency */ = {
+		7B5D8B66701E0EC6D6E142A35ECC9F44 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = CD5A9EDCBBD461A3545C2749A6B82810 /* SwiftyJSON */;
-			targetProxy = E9B7E10E6D1F834D1BB36DC157C28714 /* PBXContainerItemProxy */;
+			target = C3D8FC9024B1A6C4E14AF49C964C87C9 /* SwiftyJSON */;
+			targetProxy = 12B001306845AD6C3FAD8C3B4A89A718 /* PBXContainerItemProxy */;
+		};
+		F0DA4C5B6FEAF2C8581F7C4B0F214A0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftMQTT;
+			target = 9C7272434E75597C3114CCDBB59E4F5D /* SwiftMQTT */;
+			targetProxy = 2EC1F6FCE89F3170B16FED935B74343F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		04ADCCF3A50AE6A028B666951A278CE8 /* Debug */ = {
+		292A3EED32FCF905FCE1B07F116E225E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 582819FB717469372025D0B583164EEB /* Pods-Color_Picker.debug.xcconfig */;
+			baseConfigurationReference = 6F714A584CBC90B6F4E404A0258FB9D5 /* SwiftMQTT.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -442,48 +600,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Color_Picker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Color_Picker/Pods-Color_Picker.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Color_Picker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2183BC5579A8891A8585F2A290B94C8B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMQTT/SwiftMQTT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMQTT/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftMQTT/SwiftMQTT.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftMQTT;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -556,39 +680,6 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_Color_PickerTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5194FD1F81257C9C066BFB7712B5D88D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B55CCD81F221A80D8E213073354AE156 /* Pods-Color_Picker.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Color_Picker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Color_Picker/Pods-Color_Picker.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Color_Picker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -672,6 +763,68 @@
 			};
 			name = Release;
 		};
+		790A00AABE593C1DB4B1079080EDBCA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F714A584CBC90B6F4E404A0258FB9D5 /* SwiftMQTT.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftMQTT/SwiftMQTT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftMQTT/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftMQTT/SwiftMQTT.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftMQTT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7B4521E2C2C7840FD9E39E2B95A0D083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B55CCD81F221A80D8E213073354AE156 /* Pods-Color_Picker.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Color_Picker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Color_Picker/Pods-Color_Picker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Color_Picker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		7FA8833D2C34A86BEF05E8550FF7C475 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 38870CEFA2EFE502EA3E809FAEE9ECE6 /* Pods-Color_PickerUITests.debug.xcconfig */;
@@ -738,9 +891,73 @@
 			};
 			name = Debug;
 		};
-		C18839A831B1AB45111A1FA010090451 /* Release */ = {
+		8AC2EC90A50E608FFBFA2CD189BF7B34 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
+			baseConfigurationReference = 45E15A213DB586EE2E3D3BC03DFBCE9F /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C10601319071343ED23DB206397A98F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 582819FB717469372025D0B583164EEB /* Pods-Color_Picker.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Color_Picker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Color_Picker/Pods-Color_Picker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Color_Picker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED639094863B2F4F2EFA1173D385525F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45E15A213DB586EE2E3D3BC03DFBCE9F /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -788,20 +1005,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		35FD498B4C7199320BDDA6DCB657658D /* Build configuration list for PBXNativeTarget "Pods-Color_Picker" */ = {
+		761362C9AEBC985590329BC8316633B2 /* Build configuration list for PBXNativeTarget "SwiftMQTT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				04ADCCF3A50AE6A028B666951A278CE8 /* Debug */,
-				5194FD1F81257C9C066BFB7712B5D88D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		413E8F975F294538017D983706E9E6A6 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2183BC5579A8891A8585F2A290B94C8B /* Debug */,
-				C18839A831B1AB45111A1FA010090451 /* Release */,
+				292A3EED32FCF905FCE1B07F116E225E /* Debug */,
+				790A00AABE593C1DB4B1079080EDBCA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -811,6 +1019,24 @@
 			buildConfigurations = (
 				7FA8833D2C34A86BEF05E8550FF7C475 /* Debug */,
 				6C1AE7B75B99D0BEECF8BB7C13861CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A56DB18F3EDF620346DA69C4E259A69 /* Build configuration list for PBXNativeTarget "Pods-Color_Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10601319071343ED23DB206397A98F4 /* Debug */,
+				7B4521E2C2C7840FD9E39E2B95A0D083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3C20766AFA9C50B8B270AD96202330F /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AC2EC90A50E608FFBFA2CD189BF7B34 /* Debug */,
+				ED639094863B2F4F2EFA1173D385525F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

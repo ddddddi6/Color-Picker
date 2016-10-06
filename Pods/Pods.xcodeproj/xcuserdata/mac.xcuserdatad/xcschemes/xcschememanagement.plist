@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftMQTT.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +32,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5D5A8C1165004843597F0D6D7B0962F2</key>
+		<key>34E1530D88C9583CC600067D94E17AD4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>74DA8C8BF05DBF3F87C53333372D3603</key>
+		<key>5D5A8C1165004843597F0D6D7B0962F2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -42,7 +47,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CD5A9EDCBBD461A3545C2749A6B82810</key>
+		<key>9C7272434E75597C3114CCDBB59E4F5D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C3D8FC9024B1A6C4E14AF49C964C87C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

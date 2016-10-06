@@ -5,6 +5,7 @@ target 'Color_Picker' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
     pod 'SwiftyJSON'
+    pod 'SwiftMQTT' 
   # Pods for Color_Picker
 
   target 'Color_PickerTests' do

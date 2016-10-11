@@ -18,7 +18,7 @@ class ColorGameViewController: UIViewController {
     // Typealias for HSV color values
     typealias HSV = (hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)
     
-    var url = "http://118.139.61.212:3000/currentcolor" as String
+    var url = "http://118.139.55.105:3000/currentcolor" as String
     var rgb: RGB?
     var colors: [String] = ["red", "pink", "purple", "blue", "green", "yellow", "orange"]
     
@@ -78,65 +78,6 @@ class ColorGameViewController: UIViewController {
         self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
-    func rgb2hsv(rgb: RGB) -> HSV {
-        // Converts RGB to a HSV color
-        var hsb: HSV = (hue: 0.0, saturation: 0.0, brightness: 0.0, alpha: 0.0)
-        
-        let rd: CGFloat = rgb.red
-        let gd: CGFloat = rgb.green
-        let bd: CGFloat = rgb.blue
-        
-        let maxV: CGFloat = max(rd, max(gd, bd))
-        let minV: CGFloat = min(rd, min(gd, bd))
-        var h: CGFloat = 0
-        var s: CGFloat = 0
-        var b: CGFloat = 0
-        
-        let d: CGFloat = maxV - minV
-        
-        s = maxV == 0 ? 0 : d / minV;
-        
-        if (maxV == minV) {
-            h = 0
-            s = 0
-            b = minV
-        } else {
-            let d: CGFloat = (rd==minV) ? gd-bd : ((bd==minV) ? rd-gd : bd-rd)
-            let e: CGFloat = (rd==minV) ? 3 : ((bd==minV) ? 1 : 5);
-            h = (e - d/(maxV - minV)) / 6.0;
-            s = (maxV - minV)/maxV;
-            b = maxV;
-        }
-        
-        hsb.hue = h
-        print(h)
-        hsb.saturation = s
-        hsb.brightness = b
-        hsb.alpha = rgb.alpha
-        return hsb
-    }
-    
-    func checkColor(hsb: HSV) -> String {
-        var color: String = ""
-        let h = hsb.hue * 360
-        if (h >= 0 && h <= 30) {
-            color = "red"
-        } else if (h >= 320 && h <= 360) {
-            color = "pink"
-        } else if (h >= 245 && h <= 319) {
-            color = "purple"
-        } else if (h >= 205 && h <= 244) {
-            color = "blue"
-        } else if (h >= 68 && h <= 204) {
-            color = "green"
-        } else if (h >= 40 && h <= 67) {
-            color = "yellow"
-        } else if (h >= 30 && h <= 39) {
-            color = "orange"
-        }
-        return color
-    }
-    
     // Download current color from the server and check network connection
     // solution from: http://docs.themoviedb.apiary.io/#reference/movies/movienowplaying
     func downloadColorData(){
@@ -149,8 +90,10 @@ class ColorGameViewController: UIViewController {
             print(error)
             if let response = response, data = data {
                 self.parseColorJSON(data)
+                GameManager.gameManager.setTotalCounts()
                 dispatch_async(dispatch_get_main_queue()) {
-                    if (self.colorName.text == self.checkColor(self.rgb2hsv(self.rgb!))) {
+                    if (self.colorName.text == ColorManager.colorManager.checkColor(ColorManager.colorManager.rgb2hsv(self.rgb!))) {
+                        GameManager.gameManager.setSuccessCounts()
                         let messageString: String = "Congratulations!"
                         // Setup an alert to warn user
                         // UIAlertController manages an alert instance
@@ -158,11 +101,12 @@ class ColorGameViewController: UIViewController {
                             UIAlertControllerStyle.Alert)
                         
                         alertController.addAction(UIAlertAction(title: "New Game", style: UIAlertActionStyle.Default,handler: { (action: UIAlertAction!) in
-                            self.updateColorName()
+                                self.updateColorName()
                         }))
                         alertController.addAction(UIAlertAction(title: "Dismiss", style: .Cancel, handler: nil))
                         self.presentViewController(alertController, animated: true, completion: nil)
                     } else {
+                        GameManager.gameManager.setFailureCounts()
                         let messageString: String = "Sorry, please try again."
                         // Setup an alert to warn user
                         // UIAlertController manages an alert instance

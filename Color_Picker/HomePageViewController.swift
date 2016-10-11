@@ -15,7 +15,7 @@ class HomePageViewController: UIViewController {
     @IBOutlet var historyButton: UIButton!
     @IBOutlet var tempLabel: UILabel!
     
-    var url = "http://118.139.61.212:3000/currentbaro" as String
+    var url = "http://118.139.55.105:3000/currentbaro" as String
     var currentTemperature: Int?
     
     override func viewDidLoad() {
@@ -148,6 +148,9 @@ class HomePageViewController: UIViewController {
         // Pass the selected object to the new view controller.
         if (segue.identifier == "playGameSegue") {
             let controller = segue.destinationViewController as! ColorGameViewController
+            controller.view.backgroundColor = self.view.backgroundColor
+        } else if (segue.identifier == "viewHistorySegue") {
+            let controller = segue.destinationViewController as! HistoryTableViewController
             controller.view.backgroundColor = self.view.backgroundColor
         }
     }

@@ -58,7 +58,7 @@ class HistoryTableViewController: UITableViewController, UIPickerViewDelegate, U
         let toolBar = UIToolbar()
         toolBar.barStyle = UIBarStyle.Default
         toolBar.translucent = true
-        toolBar.tintColor = UIColor(red: 76/255, green: 217/255, blue: 100/255, alpha: 1)
+        toolBar.tintColor = UIColor.blackColor()
         toolBar.sizeToFit()
         
         
@@ -89,6 +89,26 @@ class HistoryTableViewController: UITableViewController, UIPickerViewDelegate, U
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        var messageString: String = ""
+        if (lastUpdates.count == 0){
+            messageString = "Something wrong with the network connection"
+        }
+        if (GameManager.gameManager.getCounts() == nil) {
+            messageString = "Sorry, there is no record"
+        }
+        
+        // Setup an alert to warn user
+        // UIAlertController manages an alert instance
+        let alertController = UIAlertController(title: "Alert", message: messageString, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
     // Download historical color data from the server and check network connection
     // solution from: http://docs.themoviedb.apiary.io/#reference/movies/movienowplaying
     func downloadColorData(url: String){
@@ -99,7 +119,7 @@ class HistoryTableViewController: UITableViewController, UIPickerViewDelegate, U
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithRequest(request) { data, response, error in
             print(error)
-            if let response = response, data = data {
+            if let data = data {
                 self.parseColorJSON(data)
                 dispatch_async(dispatch_get_main_queue()) {
                     self.tableView.reloadData()
@@ -187,7 +207,7 @@ class HistoryTableViewController: UITableViewController, UIPickerViewDelegate, U
             rgb = (red: c.red!/255, green: c.green!/255, blue: c.blue!/255, alpha: 1.0)
 
             cell.colorLabel.text = ColorManager.colorManager.checkColor(ColorManager.colorManager.rgb2hsv(rgb!))
-            cell.colorLabel.textColor = UIColor.blueColor()
+            cell.colorLabel.textColor = UIColor(red: c.red!/255.0, green: c.green!/255.0, blue: c.blue!/255.0, alpha: 1.0)
                 //UIColor(red: c.red!/255, green: c.green!/255, blue: c.blue!/255, alpha: 1.0)
         }
         return cell

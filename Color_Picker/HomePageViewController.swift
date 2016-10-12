@@ -21,11 +21,11 @@ class HomePageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        playButton.layer.cornerRadius = 10
-        historyButton.layer.cornerRadius = 10
-        playButton.backgroundColor = UIColor(red: 251/255.0, green: 131/255.0, blue: 154/255.0, alpha: 1.0)
-        historyButton.backgroundColor = UIColor(red: 251/255.0, green: 131/255.0, blue: 154/255.0, alpha: 1.0)
-        self.view.backgroundColor = UIColor(red: 167/255.0, green: 227/255.0, blue: 255/255.0, alpha: 1.0)
+        playButton.layer.cornerRadius = 30
+        historyButton.layer.cornerRadius = 30
+        playButton.backgroundColor = UIColor(red: 0/255.0, green: 185/255.0, blue: 64/255.0, alpha: 1.0)
+        historyButton.backgroundColor = UIColor(red: 0/255.0, green: 185/255.0, blue: 64/255.0, alpha: 1.0)
+        self.view.backgroundColor = UIColor(red: 251/255.0, green: 131/255.0, blue: 154/255.0, alpha: 1.0)
         self.downloadTempData()
         updateBackgroundColor()
         // Do any additional setup after loading the view.
@@ -139,7 +139,7 @@ class HomePageViewController: UIViewController {
         } else if (temp >= 35 && temp <= 36) {
             self.view.backgroundColor = UIColor(red: 255/255.0, green: 38/255.0, blue: 10/255.0, alpha: 1.0)
         } else {
-            self.view.backgroundColor = UIColor(red: 167/255.0, green: 227/255.0, blue: 255/255.0, alpha: 1.0)
+            self.view.backgroundColor = UIColor(red: 251/255.0, green: 131/255.0, blue: 154/255.0, alpha: 1.0)
         }
     }
     

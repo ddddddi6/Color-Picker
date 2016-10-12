@@ -30,10 +30,12 @@ class ColorGameViewController: UIViewController {
         super.viewDidLoad()
         
         updateColorName()
-        comfirmButton.layer.cornerRadius = 10
-        cancelButton.layer.cornerRadius = 10
-        cancelButton.backgroundColor = UIColor(red: 251/255.0, green: 131/255.0, blue: 154/255.0, alpha: 1.0)
-        comfirmButton.backgroundColor = UIColor(red: 251/255.0, green: 131/255.0, blue: 154/255.0, alpha: 1.0)
+        comfirmButton.layer.cornerRadius = 20
+        cancelButton.layer.cornerRadius = 20
+        colorName.layer.masksToBounds = true
+        colorName.layer.cornerRadius = 10
+        colorName.layer.borderColor = UIColor.whiteColor().CGColor
+        colorName.layer.borderWidth = 3.0
         
         //print(checkColor(self.rgb2hsv((red: 157/255, green: 125/255, blue: 148/255, alpha: 1))))
         
@@ -70,8 +72,16 @@ class ColorGameViewController: UIViewController {
     
     @IBAction func confirmChoice(sender: UIButton) {
         downloadColorData()
-        //print(checkColor(rgb2hsv(rgb!)))
-        
+        if rgb == nil {
+            let messageString: String = "Something wrong with the connection"
+            // Setup an alert to warn user
+            // UIAlertController manages an alert instance
+            let alertController = UIAlertController(title: "Alert", message: messageString, preferredStyle: UIAlertControllerStyle.Alert)
+            
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
     }
     
     @IBAction func cancelAction(sender: UIButton) {
@@ -88,7 +98,7 @@ class ColorGameViewController: UIViewController {
         let session = NSURLSession.sharedSession()
         let task = session.dataTaskWithRequest(request) { data, response, error in
             print(error)
-            if let response = response, data = data {
+            if let data = data {
                 self.parseColorJSON(data)
                 GameManager.gameManager.setTotalCounts()
                 dispatch_async(dispatch_get_main_queue()) {
@@ -116,7 +126,6 @@ class ColorGameViewController: UIViewController {
                         
                         self.presentViewController(alertController, animated: true, completion: nil)
                     }
-
                 }
             } else {
                 let messageString: String = "Something wrong with the connection"

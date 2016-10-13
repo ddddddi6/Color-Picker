@@ -18,7 +18,7 @@ class ColorGameViewController: UIViewController {
     // Typealias for HSV color values
     typealias HSV = (hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)
     
-    var url = "http://118.139.55.105:3000/currentcolor" as String
+    var url = "http://118.139.41.63:3000/currentcolor" as String
     var rgb: RGB?
     var colors: [String] = ["red", "pink", "purple", "blue", "green", "yellow", "orange"]
     
@@ -29,6 +29,7 @@ class ColorGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // UI settings
         updateColorName()
         comfirmButton.layer.cornerRadius = 20
         cancelButton.layer.cornerRadius = 20
@@ -47,6 +48,7 @@ class ColorGameViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // parse RGB to color name
     func updateColorName() {
         let rand = Int(arc4random_uniform(7))
         colorName.text = colors[rand]
@@ -72,16 +74,6 @@ class ColorGameViewController: UIViewController {
     
     @IBAction func confirmChoice(sender: UIButton) {
         downloadColorData()
-        if rgb == nil {
-            let messageString: String = "Something wrong with the connection"
-            // Setup an alert to warn user
-            // UIAlertController manages an alert instance
-            let alertController = UIAlertController(title: "Alert", message: messageString, preferredStyle: UIAlertControllerStyle.Alert)
-            
-            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-            
-            self.presentViewController(alertController, animated: true, completion: nil)
-        }
     }
     
     @IBAction func cancelAction(sender: UIButton) {
@@ -100,10 +92,11 @@ class ColorGameViewController: UIViewController {
             print(error)
             if let data = data {
                 self.parseColorJSON(data)
-                GameManager.gameManager.setTotalCounts()
                 dispatch_async(dispatch_get_main_queue()) {
                     if (self.colorName.text == ColorManager.colorManager.checkColor(ColorManager.colorManager.rgb2hsv(self.rgb!))) {
-                        GameManager.gameManager.setSuccessCounts()
+                        // successful counts plus 1
+                        GameManager.gameManager.saveCounts("win")
+                        // if the user win the game, popup an alert and let them to choose whether start a new game or not
                         let messageString: String = "Congratulations!"
                         // Setup an alert to warn user
                         // UIAlertController manages an alert instance
@@ -116,8 +109,20 @@ class ColorGameViewController: UIViewController {
                         alertController.addAction(UIAlertAction(title: "Dismiss", style: .Cancel, handler: nil))
                         self.presentViewController(alertController, animated: true, completion: nil)
                     } else {
-                        GameManager.gameManager.setFailureCounts()
+                        // failed counts plus 1
+                        GameManager.gameManager.saveCounts("lose")
+                        // a message to alert user that they lose the game
                         let messageString: String = "Sorry, please try again."
+                        // Setup an alert to warn user
+                        // UIAlertController manages an alert instance
+                        let alertController = UIAlertController(title: "Alert", message: messageString, preferredStyle: UIAlertControllerStyle.Alert)
+                        
+                        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+                        
+                        self.presentViewController(alertController, animated: true, completion: nil)
+                    }
+                    if self.rgb == nil {
+                        let messageString: String = "Something wrong with the connection"
                         // Setup an alert to warn user
                         // UIAlertController manages an alert instance
                         let alertController = UIAlertController(title: "Alert", message: messageString, preferredStyle: UIAlertControllerStyle.Alert)

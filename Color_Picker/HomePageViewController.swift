@@ -15,18 +15,24 @@ class HomePageViewController: UIViewController {
     @IBOutlet var historyButton: UIButton!
     @IBOutlet var tempLabel: UILabel!
     
-    var url = "http://118.139.55.105:3000/currentbaro" as String
+    // url for connecting to server
+    var url = "http://118.139.41.63:3000/currentbaro" as String
     var currentTemperature: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // setting UI
         playButton.layer.cornerRadius = 30
         historyButton.layer.cornerRadius = 30
         playButton.backgroundColor = UIColor(red: 0/255.0, green: 185/255.0, blue: 64/255.0, alpha: 1.0)
         historyButton.backgroundColor = UIColor(red: 0/255.0, green: 185/255.0, blue: 64/255.0, alpha: 1.0)
         self.view.backgroundColor = UIColor(red: 251/255.0, green: 131/255.0, blue: 154/255.0, alpha: 1.0)
+        
+        // connect to server
         self.downloadTempData()
+        
+        // update background color based on current temperature
         updateBackgroundColor()
         // Do any additional setup after loading the view.
     }
@@ -36,14 +42,7 @@ class HomePageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func startGame(sender: UIButton) {
-        //self.performSegueWithIdentifier("playGameSegue", sender: self)
-    }
-
-    @IBAction func viewHistory(sender: UIButton) {
-        //self.performSegueWithIdentifier("viewHistorySegue", sender: self)
-    }
-    
+    // change background color according to current temperature
     func updateBackgroundColor() {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(5.0 * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) { () -> Void in
             self.downloadTempData()
@@ -62,8 +61,10 @@ class HomePageViewController: UIViewController {
         dispatch_async(dispatch_get_global_queue(priority, 0)) {
             let task = session.dataTaskWithRequest(request) { data, response, error in
                 if let response = response, data = data {
+                    // parse received json data
                     self.parseTempJSON(data)
                     dispatch_async(dispatch_get_main_queue()) {
+                        // update temperature label and change background color
                         self.tempLabel.text = String(self.currentTemperature!)
                         self.changeBackgroundColor(self.currentTemperature!)
                     }
@@ -107,6 +108,7 @@ class HomePageViewController: UIViewController {
         }
     }
     
+    // define background color according to temperature
     func changeBackgroundColor(temp: Int)  {
         if (temp >= 10 && temp <= 11) {
             self.view.backgroundColor = UIColor(red: 4/255.0, green: 147/255.0, blue: 218/255.0, alpha: 1.0)

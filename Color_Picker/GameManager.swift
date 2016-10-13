@@ -15,87 +15,69 @@ class GameManager: NSObject {
     var totalCounts: Int?
     var successCounts: Int?
     var failureCounts: Int?
-    
-    func setTotalCounts() {
-        if (totalCounts == nil) {
-            totalCounts = 1
-            saveCounts()
-        } else {
-            totalCounts = getCounts()!["total"]! + 1
-            saveCounts()
-        }
-    }
-    
-    func getTotalCounts() -> Int{
-        return totalCounts!
-    }
-    
-    func setSuccessCounts() {
-        if (successCounts == nil) {
-            successCounts = 1
-            saveCounts()
-        } else {
-            successCounts = getCounts()!["win"]! + 1
-            saveCounts()
-        }
-    }
-    
-    func getSuccessCounts() -> Int{
-        return successCounts!
-    }
-    
-    func setFailureCounts() {
-        if (failureCounts == nil) {
-            failureCounts = 1
-            saveCounts()
-        } else {
-            failureCounts = getCounts()!["lose"]! + 1
-            saveCounts()
-        }
-    }
-    
-    func getFailureCounts() -> Int{
-        return failureCounts!
-    }
+
     
     // return saved records
     func getCounts() -> [String:Int]? {
-        let counts = myDefaults.objectForKey("save") as? [String:Int]
+        let counts = myDefaults.objectForKey("saves") as? [String:Int]
         return counts
     }
     
-    func saveCounts() {
-        if (myDefaults.objectForKey("save") == nil) {
+    // save game data to NSUserdefalts
+    func saveCounts(condition: String) {
+        if (myDefaults.objectForKey("saves") == nil) {
             // the savedMovie `NSUserDefaults` does not exist
-            if (failureCounts == nil) {
-                failureCounts = 0
+            switch condition {
+                case "win":
+                    successCounts = 1
+                    failureCounts = 0
+                    totalCounts = 1
+                    break
+                case "lose":
+                    successCounts = 0
+                    failureCounts = 1
+                    totalCounts = 1
+                    break
+                default:
+                    successCounts = 0
+                    failureCounts = 0
+                    totalCounts = 0
+                    break
             }
-            if (successCounts == nil) {
-                successCounts = 0
-            }
-            
             let array = ["win": successCounts!, "lose": failureCounts!, "total": totalCounts!]
             
             // then update whats in the `NSUserDefault`
-            myDefaults.setObject(array, forKey: "save")
+            myDefaults.setObject(array, forKey: "saves")
             
             // call this after update
             myDefaults.synchronize()
             
         } else {
             // the movie has not been saved
-            if (failureCounts == nil) {
-                failureCounts = 0
+            switch condition {
+                // if the user win the game
+            case "win":
+                successCounts = getCounts()!["win"]! + 1
+                failureCounts = getCounts()!["lose"]!
+                totalCounts = getCounts()!["total"]! + 1
+                break
+                // if the user lose the game
+            case "lose":
+                successCounts = getCounts()!["win"]!
+                failureCounts = getCounts()!["lose"]! + 1
+                totalCounts = getCounts()!["total"]! + 1
+                break
+            default:
+                break
             }
-            if (successCounts == nil) {
-                successCounts = 0
-            }
+            
+            // update data in NSUserdefault
             var array = getCounts()
             array?.updateValue(successCounts!, forKey: "win")
             array?.updateValue(failureCounts!, forKey: "lose")
             array?.updateValue(totalCounts!, forKey: "total")
             
-            myDefaults.setValue(array, forKey: "save")
+            myDefaults.setValue(array, forKey: "saves")
         }
  
     }

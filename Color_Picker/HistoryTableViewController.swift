@@ -20,6 +20,7 @@ class HistoryTableViewController: UITableViewController, UIPickerViewDelegate, U
     typealias RGB = (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
 
     var rgb: RGB?
+    // options how many historical records should be displayed
     var pickOption = ["5", "10", "15", "20", "25"]
     var c: ColorData!
     
@@ -39,6 +40,7 @@ class HistoryTableViewController: UITableViewController, UIPickerViewDelegate, U
         var win: String!
         var lose: String!
         
+        // update counting label according to the data saved locally
         if (GameManager.gameManager.getCounts() == nil) {
             win = "0"
             lose = "0"
@@ -50,6 +52,7 @@ class HistoryTableViewController: UITableViewController, UIPickerViewDelegate, U
         winLabel.text = "You won: " + win
         loseLabel.text = "You lose: " + lose
         
+        // popup a picker view when user start edit the textfield
         let pickerView = UIPickerView(frame: CGRectMake(0, 200, view.frame.width, 300))
         pickerView.backgroundColor = .whiteColor()
         pickerView.showsSelectionIndicator = true
@@ -61,7 +64,7 @@ class HistoryTableViewController: UITableViewController, UIPickerViewDelegate, U
         toolBar.tintColor = UIColor.blackColor()
         toolBar.sizeToFit()
         
-        
+        // define the picker view
         let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: #selector(HistoryTableViewController.donePicker(_:)))
 
         
@@ -73,7 +76,7 @@ class HistoryTableViewController: UITableViewController, UIPickerViewDelegate, U
         
         updatesField.text = "5"
         
-        let url = "http://118.139.55.105:3000/lastncolor?n=" + updatesField.text! as String
+        let url = "http://118.139.41.63:3000/lastncolor?n=" + updatesField.text! as String
         
         downloadColorData(url)
 
@@ -91,22 +94,6 @@ class HistoryTableViewController: UITableViewController, UIPickerViewDelegate, U
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
-        var messageString: String = ""
-        if (lastUpdates.count == 0){
-            messageString = "Something wrong with the network connection"
-        }
-        if (GameManager.gameManager.getCounts() == nil) {
-            messageString = "Sorry, there is no record"
-        }
-        
-        // Setup an alert to warn user
-        // UIAlertController manages an alert instance
-        let alertController = UIAlertController(title: "Alert", message: messageString, preferredStyle: UIAlertControllerStyle.Alert)
-        
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-        
-        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     // Download historical color data from the server and check network connection
@@ -123,6 +110,26 @@ class HistoryTableViewController: UITableViewController, UIPickerViewDelegate, U
                 self.parseColorJSON(data)
                 dispatch_async(dispatch_get_main_queue()) {
                     self.tableView.reloadData()
+                    if (self.lastUpdates.count == 0 && GameManager.gameManager.getCounts() == nil){
+                        let messageString = "Sorry, there is no record"
+                        // Setup an alert to warn user
+                        // UIAlertController manages an alert instance
+                        let alertController = UIAlertController(title: "Alert", message: messageString, preferredStyle: UIAlertControllerStyle.Alert)
+                        
+                        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+                        
+                        self.presentViewController(alertController, animated: true, completion: nil)
+                    }
+                    if (self.lastUpdates.count < Int(self.updatesField.text!)!) {
+                        let messageString = "Sorry, there are only " + String(self.lastUpdates.count) + " records"
+                        // Setup an alert to warn user
+                        // UIAlertController manages an alert instance
+                        let alertController = UIAlertController(title: "Alert", message: messageString, preferredStyle: UIAlertControllerStyle.Alert)
+                        
+                        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+                        
+                        self.presentViewController(alertController, animated: true, completion: nil)
+                    }
                 }
             } else {
                 let messageString: String = "Something wrong with the connection"
@@ -150,8 +157,8 @@ class HistoryTableViewController: UITableViewController, UIPickerViewDelegate, U
             let json = JSON(result)
             print(json)
             
-            NSLog("Found \(json.count) new results!")
-            for color in json.arrayValue {
+            NSLog("Found \(json["metadata"]["colorData"].count) new results!")
+            for color in json["metadata"]["colorData"].arrayValue {
                 if let
                     time = color["time"].string,
                     red = color["red"].double,
@@ -169,13 +176,11 @@ class HistoryTableViewController: UITableViewController, UIPickerViewDelegate, U
     func donePicker(sender: UIBarButtonItem) {
         if updatesField.editing {
             updatesField.resignFirstResponder()
-            let url = "http://118.139.55.105:3000/lastncolor?n=" + updatesField.text! as String
+            let url = "http://118.139.41.63:3000/lastncolor?n=" + updatesField.text! as String
             lastUpdates.removeAllObjects()
             downloadColorData(url)
         }
     }
-    
-
 
     // MARK: - Table view data source
 
@@ -213,6 +218,7 @@ class HistoryTableViewController: UITableViewController, UIPickerViewDelegate, U
         return cell
     }
     
+    // Pickerview settings
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }

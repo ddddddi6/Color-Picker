@@ -17,7 +17,7 @@ class ColorManager: NSObject {
     // Typealias for HSV color values
     typealias HSV = (hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)
 
-    
+    // Convert RGB to HSV
     func rgb2hsv(rgb: RGB) -> HSV {
         // Converts RGB to a HSV color
         var hsb: HSV = (hue: 0.0, saturation: 0.0, brightness: 0.0, alpha: 0.0)
@@ -56,22 +56,26 @@ class ColorManager: NSObject {
         return hsb
     }
 
+    // Convert hsv to color name
     func checkColor(hsb: HSV) -> String {
         var color: String = ""
         let h = hsb.hue * 360
+        print(h)
         if (h >= 0 && h <= 30) {
             color = "red"
-        } else if (h >= 320 && h <= 360) {
+        } else if (h >= 345 && h <= 360) {
+            color = "red"
+        } else if (h >= 320 && h <= 344) {
             color = "pink"
         } else if (h >= 245 && h <= 319) {
             color = "purple"
         } else if (h >= 205 && h <= 244) {
             color = "blue"
-        } else if (h >= 68 && h <= 204) {
+        } else if (h >= 75 && h <= 204) {
             color = "green"
-        } else if (h >= 40 && h <= 67) {
+        } else if (h >= 46 && h <= 74) {
             color = "yellow"
-        } else if (h >= 30 && h <= 39) {
+        } else if (h >= 30 && h <= 45) {
             color = "orange"
         }
         return color
